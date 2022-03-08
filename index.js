@@ -1,7 +1,10 @@
-document.getElementById("open-modal").addEventListener('click', function(){
-    document.getElementById("overlay").style.display="block";
-})
+const openBtn = document.getElementById("open-modal");
+const overlayEl = document.getElementById("overlay");
+const closeBtn = document.getElementById("close-modal");
 
-document.getElementById("close-modal").addEventListener('click', function(){
-    document.getElementById("overlay").style.display="none";
-})
+openBtn.addEventListener("click", function () {
+  overlayEl.style.display = "block";
+});
+closeBtn.addEventListener("click", function () {
+  overlayEl.style.display = "none";
+});
